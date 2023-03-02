@@ -1,0 +1,232 @@
+
+/*Hola profesor quería decirle que hice así el trabajo porque no sabía si había que poner datos, son datos falsos, o dejarlo vacío*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.area-de-impresion {
+	width: 80%;
+	margin: 20px auto;
+	padding-bottom: 20px;
+}
+
+.area-de-impresion .encabezado {
+	width: 100%;
+	height: 150px;
+	background-color: darkgrey;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.encabezado img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.encabezado img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px black;
+}
+
+.encabezado .texto {
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+
+.encabezado .texto h1 {
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.encabezado .texto p {
+    font-size: 20px;
+    color: lightgrey;
+    text-align: center;
+}
+
+.contenido {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.area_izquierda {
+	width: 40%;
+	background-color: lightgrey;
+	text-align: center;
+}
+
+.area_izquierda .contacto {
+	margin-top: 130px;
+	padding: 0 30px;
+}
+
+.contacto h4 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+.contacto h5 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.contacto p {
+	font-size: 17px;
+}
+
+.habilidades h1 {
+	margin-top: 30px;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.habilidades li {
+	font-size: 18px;
+	margin: 10px 0;
+	list-style: circle;
+}
+
+.idiomas {
+	margin-top: 30px;
+}
+
+.idiomas h1 {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.idiomas li {
+	font-size: 18px;
+	margin: 10px 0;
+	list-style: circle;
+}
+
+.area_derecha {
+	width: 60%;
+	padding: 50px;
+	background-color: floralwhite;
+}
+
+.area_derecha h1 {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.area_derecha h1 span {
+	margin-right: 30px;
+	font-size: 50px;
+	color: black;
+}
+
+.area_derecha p {
+	padding-left: 70px;
+	text-align: justify;
+	word-break: break-all;
+	font-size: 17px;
+	color: black;
+	margin-top: 10px;
+}
+
+.trabajo {
+	margin: 20px 0;
+}
+
+.experiencia .trabajo {
+	position: relative;
+}
+
+.trabajo h3 {
+	font-size: 22px;
+	font-weight: normal;
+	padding-left: 70px;
+}
+
+.trabajo h4 {
+	font-size: 18px;
+	padding-left: 70px;
+	font-weight: normal;
+	color: black;
+}
+
+.trabajo span {
+	position: relative;
+	top: 10px;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+    padding-left: 70px;
+}
+
+.educacion {
+	margin-top: 30px;
+}
+
+.instituto {
+	position: relative;
+	margin: 10px 0;
+}
+
+.instituto h4 {
+	padding-left: 80px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.instituto span {
+	position: relative;
+	top: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 80px;
+}
+
+.instituto p {
+	padding-left: 80px;
+}
+
+button {
+	font-size: 25px;
+	padding: 10px 20px;
+	margin: 50px 0 50px 140px;
+	background-color: grey;
+	border: none;
+	outline: none;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	cursor: pointer;
+	transition: .5s;
+}
+
+button:hover {
+	background-color: black;
+	box-shadow: 0 0 30px black;
+}
+
+@media print {
+	body *{
+		visibility: visible;
+	}
+	area-de-impresion * {
+		visibility: visible;
+	}
+}
